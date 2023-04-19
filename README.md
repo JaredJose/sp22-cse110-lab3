@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-https://jaredjose.github.io/Lab2_Starter/
+https://jaredjose.github.io/sp22-cse110-lab3/
