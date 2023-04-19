@@ -1,8 +1,31 @@
 body {
-    background-color:seagreen;
+    background-color:rgb(208, 208, 208);
+    font-size: 12pt;
+    color:rgb(0,0,0);
+    line-height: 14pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-top: 5pt;
 }
 
 h1 {
-    color:cornsilk;
+    color:navy;
     margin-left:20px;
+    font-size: 20pt;
+}
+
+h2{
+    color:#83491a;
+}
+
+h3{
+    color:hsl(187, 82, 56);
+}
+
+.box{
+    width:auto;
+    height:auto;
+    margin:auto;
+    padding:auto;
+    border:5px solid black;
 }
