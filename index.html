@@ -4,6 +4,11 @@
         <title>Lab 2: Meeting Notes</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" >
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -11,6 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="#Meeting_1">Meeting 1: Brainstorming</a></li>
+                    <li><a href="#form">Example Submission Form</a></li>
                 </ul>
             </nav>
             <hr>
@@ -21,13 +27,16 @@
                     <h3>Date: 4/12/2023</h3>
                     <details>
                         <summary>Brainstorming Session</summary>
-                        <p>Short brainstorming session where the team can get to know each other and decide on project direction.</p>
+                        <p class="summary">Short brainstorming session where the team can get to know each other and decide on project direction.</p>
                     </details>
                     <h3>Attendance:</h3>
                     <ul>
                         <li>Jared Jose</li>
                         <li>King Triton</li>
                         <li>Avatar Aang</li>
+                        <li>Scooby Doo</li>
+                        <li>Shaggy</li>
+                        <li>Bowser</li>
                     </ul>
                     <h3>Meeting Goals</h3>
                     <ol>
@@ -44,20 +53,23 @@
                         for creativity, specifically with the <em>To-Do List</em>, but was ultimately overruled by Jared and Aang. 
                     </p>
                     <div>
+                        <p>
                         One of the primary concerns introduced by the group was regarding the vague timeline requirements set forth by the project manager. King Triton was 
                         ultimately named the team leader and was tasked with asking the PM whether their produced timeline was reasonable. 
-                        
+                        </p>
+                        <p>
                         Before coming into the meeting, Avatar Aang was relatively unfamiliar with the Pomodoro Technique. Jared presented the following graphic which explained
                         pretty clearly the breakdown of how the technique is utilized. 
+                        </p>
 
-                        <br><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221216110236/Pomodoro-Technique-For-Software-Engineer.png" height="235" width="500" alt="Pomodoro Timer Technique Explained"><br>
+                        <br><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221216110236/Pomodoro-Technique-For-Software-Engineer.png" height="235" width="500" alt="Pomodoro Timer Technique Explained" class="center"><br>
 
                         In this following video, I give a brief overview of what the Pomodoro Technique is all about: <br>
-                        <video width="896" height="513" controls>
+                        <video width="896" height="513" class="center" controls>
                             <source src="vid.mp4">
                         </video>
                         <br>
-                        In-case your browser does not support videos, here is the audio from the above video: <br>
+                        <p>In-case your browser does not support videos, here is the audio from the above video: <br></p>
                         <audio controls>
                             <source src="vid.mp4">
                         </audio>
@@ -66,53 +78,58 @@
         </main>
         <footer>
             <hr>
-            <form>
-                <p><label>User name: <input type="text"></label></p>
-                <p><label>Date: <input type="date"></label></p>
-                <fieldset>
-                    <legend>Department</legend>
-                    <p><label> <input type="radio">CSE</label></p>
-                    <p><label> <input type="radio">ECE</label></p>
-                    <p><label> Other: <textarea></textarea></label></p>
-                </fieldset>
-                <fieldset>
-                    <legend>Graduating Year</legend>
-                    <label>
-                        Year:
-                        <input name="gyear" list="gyears">
-                        <datalist id="gyears">
-                            <option value="2023">
-                            <option value="2024">
-                            <option value="2025">
-                            <option value="2026">
-                        </datalist>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>College</legend>
-                    <select>
-                        <option value="1"> Revelle </option>
-                        <option value="1"> Muir </option>
-                        <option value="1"> Warren </option>
-                        <option value="1"> Marshall </option>
-                        <option value="1"> ERC </option>
-                        <option value="1"> Sixth </option>
-                        <option value="1"> Seventh </option>
-                        <option value="1"> Eigth </option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <legend>Interests</legend>
-                    <p><label> <input type="checkbox">Computer Science</label></p>
-                    <p><label> <input type="checkbox">Machine Learning</label></p>
-                    <p><label> <input type="checkbox">Cryptography</label></p>
-                    <p><label> <input type="checkbox">NLP</label></p>
-                    <p><label> <input type="checkbox">Computer Vision</label></p>
-                    <p><label> <input type="checkbox">Large Language Models</label></p>
-                    <p><label> Other: <textarea></textarea></label></p>
-                </fieldset>
-                <p><button>Submit Profile</button></p>
-            </form> 
+            <details>
+                <section id="form">
+                <summary>Example Form</summary>
+                    <form>
+                        <p><label>User name: <input type="text"></label></p>
+                        <p><label>Date: <input type="date"></label></p>
+                        <fieldset>
+                            <legend>Department</legend>
+                            <p><label> <input type="radio">CSE</label></p>
+                            <p><label> <input type="radio">ECE</label></p>
+                            <p><label> Other: <textarea></textarea></label></p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Graduating Year</legend>
+                            <label>
+                                Year:
+                                <input name="gyear" list="gyears">
+                                <datalist id="gyears">
+                                    <option value="2023">
+                                    <option value="2024">
+                                    <option value="2025">
+                                    <option value="2026">
+                                </datalist>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>College</legend>
+                            <select>
+                                <option value="1"> Revelle </option>
+                                <option value="1"> Muir </option>
+                                <option value="1"> Warren </option>
+                                <option value="1"> Marshall </option>
+                                <option value="1"> ERC </option>
+                                <option value="1"> Sixth </option>
+                                <option value="1"> Seventh </option>
+                                <option value="1"> Eigth </option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Interests</legend>
+                            <p><label> <input type="checkbox">Computer Science</label></p>
+                            <p><label> <input type="checkbox">Machine Learning</label></p>
+                            <p><label> <input type="checkbox">Cryptography</label></p>
+                            <p><label> <input type="checkbox">NLP</label></p>
+                            <p><label> <input type="checkbox">Computer Vision</label></p>
+                            <p><label> <input type="checkbox">Large Language Models</label></p>
+                            <p><label> Other: <textarea></textarea></label></p>
+                        </fieldset>
+                        <p><button>Submit Profile</button></p>
+                    </form> 
+                </section>
+            </details>
         </footer>
     </body>
 </html>
