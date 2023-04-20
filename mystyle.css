@@ -3,8 +3,8 @@
         display:inline;
     }
 }
-body {
-    background-color:rgb(208, 208, 208);
+body, 
+header{
     font-size: 12pt;
     color:rgb(0,0,0);
     line-height: 14pt;
@@ -53,6 +53,12 @@ p:active{
     color:rgb(100,100,100);
 }
 
+p
+em, 
+span{
+    color:blueviolet;
+}
+
 ul{
     margin-top: 8px;
     margin-bottom: 8px;
@@ -71,12 +77,19 @@ ol{
     justify-items:center;
 }
 
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 video{
     height:fit-content;
     width:fit-content;
     max-width:900px;
     max-height:600px;
     position:relative;
+    justify-self:center;
 }
 
 audio{
@@ -86,4 +99,46 @@ audio{
 button:hover{
     /*Changes the color of button text when hovering over it*/
     color:darkblue;
+}
+
+#Meeting_1{
+    color:darkslategrey;
+}
+
+* {
+    background-color:rgb(208, 208, 208);
+}
+
+footer p{
+    border-style:none;
+}
+
+input[type="text"]{
+    width:fit-content;
+    color:blue;
+}
+
+div > p{
+    border-style:none;
+    background-color:silver;
+}
+
+ul > li {
+    color:lightcoral;
+}
+
+h2+h3 {
+    background-color:darkblue;
+    color:lightgray;
+    width:fit-content;
+}
+
+img ~ p {
+    background-color:lightcoral;
+}
+
+p.summary{
+    background-color:black;
+    color: lightgray;
+    width:fit-content;
 }
