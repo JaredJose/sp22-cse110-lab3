@@ -1,3 +1,8 @@
+@media (min-width:1000px){
+    audio{
+        display:inline;
+    }
+}
 body {
     background-color:rgb(208, 208, 208);
     font-size: 12pt;
@@ -6,20 +11,27 @@ body {
     padding-left: 5pt;
     padding-right: 5pt;
     padding-top: 5pt;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 h1 {
     color:navy;
     margin-left:20px;
     font-size: 20pt;
+    text-align: center;
+    position:sticky;
 }
 
 h2{
     color:#83491a;
+    text-decoration: blue wavy underline;
+    text-align: left;
 }
 
 h3{
-    color:hsl(187, 82, 56);
+    color:hsl(187, 88%, 23%);
+    padding: 4px;
+    margin: 4px;
 }
 
 .box{
@@ -28,4 +40,50 @@ h3{
     margin:auto;
     padding:auto;
     border:5px solid black;
+}
+
+p{
+    border: 2px solid green;
+    border-style: dotted;
+    width: auto;
+    border-radius: rem;
+    display:inline-block;
+}
+p:active{
+    color:rgb(100,100,100);
+}
+
+ul{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display:flex;
+    flex-grow:1;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+ol{
+    margin-top: 8px;
+    margin-bottom:8px;
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    justify-items:center;
+}
+
+video{
+    height:fit-content;
+    width:fit-content;
+    max-width:900px;
+    max-height:600px;
+    position:relative;
+}
+
+audio{
+    display:none;
+}
+
+button:hover{
+    /*Changes the color of button text when hovering over it*/
+    color:darkblue;
 }
